@@ -1,0 +1,24 @@
+# ==============================================================================
+# Fail2Ban Jail Configuration
+# ------------------------------------------------------------------------------
+# Purpose: Defines the defensive response for Suricata and SSH alerts.
+# ==============================================================================
+
+[DEFAULT]
+# Always ignore the local loopback to prevent administrative lockouts
+ignoreip = 127.0.0.1/8 ::1
+
+[suricata]
+enabled   = true
+filter    = suricata
+logpath   = /var/log/suricata/fast.log
+# Utilizes UFW as the native firewall backend to inject block rules
+banaction = ufw
+banaction_allports = ufw
+
+# Threat Mitigation Metrics
+# findtime: Look for 3 violations within 5 minutes
+# bantime: Block the attacker for 1 hour to deter brute-force/scanning
+findtime  = 5m
+maxretry  = 3
+bantime   = 1h
