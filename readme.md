@@ -45,9 +45,3 @@ Verifying that UFW ingested the token and rejected the traffic at the kernel lay
 * **Defense-in-Depth:** Successfully converted a passive network monitoring tool into an active defensive system.
 * **System Troubleshooting:** Gained hands-on experience debugging log parsing, service exceptions, and firewall backend interactions on a Debian Linux environment.
 * **Automation:** Engineered a robust pipeline that scales defensive actions without manual overhead.
-
----
-
-### How does this look to you?
-
-Does this cover everything you want to document, or is there a specific technical detail you want to add to the "Roadblocks" section to make it feel more personal to your experience? Once you are happy with this text, the next step is simply creating your account on GitHub and creating the repository!
