@@ -1,5 +1,3 @@
----
-
 # Automated Network Defense: Integrating Suricata IDS with Fail2ban and UFW Firewall
 
 ## 1. Executive Summary
